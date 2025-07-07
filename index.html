@@ -17,7 +17,7 @@
     }
 
     .container {
-      max-width: 800px;
+      max-width: 830px;
       margin: 50px auto;
     }
 
@@ -109,6 +109,27 @@
       border: 1px solid #e0e8f0;
     }
 
+    .talk-button {
+      background: #22c55e;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .talk-button:hover {
+      background: #16a34a;
+    }
+
+    .talk-button:active {
+      transform: translateY(1px);
+    }
+
     /* Mobile responsive styles */
     @media (max-width: 768px) {
       .intro {
@@ -145,13 +166,15 @@
           <a href="https://www.linkedin.com/in/ton%C8%9B-sergiu-327003131/">LinkedIn</a>
           <a href="https://x.com/sergiu855">Twitter</a>
         </div>
+        <button class="talk-button" onclick="window.open('https://calendly.com/sergiutont2', '_blank')">Let's
+          talk</button>
       </div>
     </div>
 
     <div class="description">
-      <p>I’m a software engineer for the past 6 years, with experience across the full stack — from frontend and backend
-        development to infrastructure and DevOps. In recent times, I’ve also been working with AI automation,
-        integrating tools like OpenAI and LangChain into real-world products.</p>
+      <p>I’ve spent 6 years building infrastructure, automation, and mobile experiences across crypto, SaaS, and AI. I
+        don’t just write code — I solve engineering problems most people avoid. I love turning constraints into elegant
+        systems. And if something seems impossible — that’s usually where I start.</p>
     </div>
 
     <div class="projects">
@@ -159,21 +182,73 @@
 
       <div class="project">
         <a href="https://tiexo.com/" target="_blank">Tiexo NFT Marketplace</a>
-        <p>Cross-chain NFT marketplace aggregating 5M+ NFTs and 30K+ collections across 7+ blockchains including Solana,
-          Ethereum, and Bitcoin. I built the core frontend, managing transactions, and cross-platform UX (Web + Mobile
-          Native).</p>
+        <p>
+          An NFT analytics and marketplace platform that support real-time tracking across 10+ blockchains. This
+          includes complex analytics, mobile dashboards, and performance that could match $100M+ competitors — all with
+          a small team.
+          <br />
+          <br />
+          My Role:
+        <ul>
+          <li>Built most of the analytics worker services that processed 30+ analytics types (sales, mints, listings)
+          </li>
+          <li>Helped design backend flow for real-time data processing and aggregation</li>
+          <li>Created native iOS and Android widgets inside an Expo app — using Swift, Kotlin, and custom plugins</li>
+          <li>Developed custom Expo modules to inject native code without ejecting the app</li>
+          <li>Collaborated on frontend dashboard UI</li>
+        </ul>
+        Impact:<br /><br />
+        ✅ Enabled real-time tracking of 500K+ transactions/day across 10+ chains<br />
+        ✅ Delivered home screen widgets with live NFT metrics on iOS and Android<br />
+        ✅ Created systems that supported marketplace and dashboard functionality without 3rd-party APIs<br />
+        ✅ Contributed to a platform with cross-chain reach and native UX most Web3 apps couldn't match<br />
+        </p>
       </div>
 
       <div class="project">
         <a href="https://stake.moonlet.io/" target="_blank">Moonlet Staking Dashboard</a>
-        <p>Unified staking dashboard for Zilliqa, Solana, Sui, and Ethereum — enabling staking, claiming, and rewards
-          tracking. I built the frontend logic, wallet connections, multi-chain flows, and transactions handling.</p>
+        <p>
+          A seamless staking dashboard that works across Zilliqa, Ethereum, Solana, Sui, and Near, with wallet support,
+          transaction handling, and a polished user experience.
+          <br /><br />
+          My Role:
+          <br />
+        <ul>
+          <li>Developed the frontend interface using React + MUI</li>
+          <li>Built modular components for stake/unstake/withdraw with dynamic chain support</li>
+          <li>Implemented wallet signing and transaction logic for Ethereum and Zilliqa, handling multiple edge cases
+          </li>
+          <li>Contributed to wallet integration architecture and shared state handling</li>
+          <li>Collaborated closely with backend and blockchain engineers to align UX with smart contract behavior</li>
+        </ul>
+
+        Impact:<br /><br />
+        ✅ Enabled cross-chain staking with smooth UX and consistent transaction handling<br />
+        ✅ Delivered production-ready UI that worked across multiple chains without code duplication<br />
+        ✅ Reduced staking friction and errors by building clear signing flows and feedback logic<br />
+
+        </p>
       </div>
 
       <div class="project">
         <a href="https://suianalytics.io/" target="_blank">Sui Analytics</a>
-        <p>Real-time analytics platform for the Sui blockchain — indexing and visualizing inflows, outflows, swaps, and
-          transactions. I built the data pipeline + frontend to surface actionable on-chain insights.</p>
+        <p>
+          The Sui analytics tool tracks project activity, token usage, and contract engagement in real time on the SUI
+          blockchain — with an intuitive dashboard interface and fast data exploration UX.
+          <br /><br />
+          My Role:
+          <br />
+        <ul>
+          <li>Developed the frontend dashboard UI in Next.js, with dynamic filters and activity breakdowns</li>
+          <li>Designed interfaces for token insights, transfer tracking, and leaderboard views</li>
+          <li>Assisted backend team with schema design and data normalization structure for efficient queries</li>
+        </ul>
+        Impact:<br /><br />
+        ✅ Delivered a user-facing dashboard used to track activity across dozens of Sui projects<br />
+        ✅ Translated raw blockchain data into actionable insights for end users<br />
+        ✅ Helped shape backend structure to optimize frontend rendering performance<br />
+
+        </p>
       </div>
 
       <div class="project">
